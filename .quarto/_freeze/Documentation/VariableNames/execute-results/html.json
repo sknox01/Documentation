@@ -2,9 +2,7 @@
   "hash": "dd87d505d29beaa91620f287b29eac21",
   "result": {
     "markdown": "---\ntitle: \"Variable names\"\norder: 4\n---\n\n\n# Description of variable names\n\n\n\n\n\n::: {#tbl-times .cell tbl-cap='Variable names & descriptions.'}\n::: {.cell-output-display}\n|Variable name |units |definition    |\n|:-------------|:-----|:-------------|\n|P             |mm    |Precipitation |\n:::\n:::",
-    "supporting": [
-      "VariableNames_files"
-    ],
+    "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],
