@@ -1,0 +1,20 @@
+---
+title: "Variable names"
+order: 4
+---
+
+# Description of variable names
+
+
+```{r include=FALSE}
+library(knitr)
+library(readxl)
+```
+
+
+```{R}
+#| label: tbl-times
+#| tbl-cap: "Variable names & descriptions."
+Sheet <- read_excel('/Users/sara/Library/CloudStorage/GoogleDrive-saraknox.knox@gmail.com/My Drive/Work/Knox/Projects/2023-QC flux network/Variable names and definitions.xlsx')
+kable(Sheet, col.names = gsub("[.]", " ", names(Sheet)))
+```

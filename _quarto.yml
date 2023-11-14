@@ -1,0 +1,53 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Project Documentation"
+  navbar:
+    background: light
+    left:
+      - href: index.qmd
+        text: Home
+      - href: Documentation/index.qmd
+        text: Documentation
+    #right:
+    #  - icon: github
+    #    href: https://github.com/ubc-micromet
+    #    aria-label: Quarto GitHub
+  sidebar:
+    - id: home
+      title: "Home"
+      style: "floating"
+      collapse-level: 3
+      align: left
+      contents:
+        - href: index.qmd
+          text: Home
+    - id: documentation
+      title: "Documentation"
+      style: "floating"
+      collapse-level: 3
+      align: left
+      contents:
+        - section: Documentation
+          contents: Documentation
+  # page-footer:
+  #   right:
+  #     - icon: github
+  #       href: https://github.com/ubc-micromet
+  #       aria-label: Quarto GitHub
+        
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+knitr:
+  opts_chunk: 
+    echo: false
+    warning: false
+    message: false
+
