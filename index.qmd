@@ -2,4 +2,4 @@
 title: "Project Documentation"
 ---
 
-This website projects project documentation.
+This website includes project documentation.
