@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.353">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Project Documentation - Variable names</title>
+<title>Project Documentation - Variable Names</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -55,7 +55,8 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -99,7 +100,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Documentation/index.html">Documentation</a></li><li class="breadcrumb-item"><a href="../Documentation/index.html">Documentation</a></li><li class="breadcrumb-item"><a href="../Documentation/VariableNames.html">Variable names</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Documentation/index.html">Documentation</a></li><li class="breadcrumb-item"><a href="../Documentation/index.html">Site Instrumentation &amp; Variable Names</a></li><li class="breadcrumb-item"><a href="../Documentation/VariableNames.html">Variable Names</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -123,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../Documentation/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Documentation</span></a>
+ <span class="menu-text">Site Instrumentation &amp; Variable Names</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -131,8 +132,14 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../Documentation/SiteInstrumentation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Site Instrumentation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../Documentation/VariableNames.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Variable names</span></a>
+ <span class="menu-text">Variable Names</span></a>
   </div>
 </li>
       </ul>
@@ -158,7 +165,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Variable names</h1>
+<h1 class="title">Variable Names</h1>
 </div>
 
 
@@ -180,18 +187,476 @@ ul.task-list li input[type="checkbox"] {
 <div id="tbl-times" class="anchored">
 <table class="table table-sm table-striped small">
 <caption>Table&nbsp;1: Variable names &amp; descriptions.</caption>
+<colgroup>
+<col style="width: 20%">
+<col style="width: 15%">
+<col style="width: 51%">
+<col style="width: 12%">
+</colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Variable name</th>
-<th style="text-align: left;">units</th>
-<th style="text-align: left;">definition</th>
+<th style="text-align: left;">Variables/Arrays</th>
+<th style="text-align: left;">Aliases</th>
+<th style="text-align: left;">Measured Variable</th>
+<th style="text-align: left;">Unit</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">P</td>
+<td style="text-align: left;">BaroVUE(1)</td>
+<td style="text-align: left;">PA</td>
+<td style="text-align: left;">Atmospheric Pressure</td>
+<td style="text-align: left;">hPa</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">BaroVUE(2)</td>
+<td style="text-align: left;">T_BaroVUE</td>
+<td style="text-align: left;">Temperature of BaroVUE</td>
+<td style="text-align: left;">degC</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BaroVUE(3)</td>
+<td style="text-align: left;">QM_BaroVUE</td>
+<td style="text-align: left;">Quality Metric of BaroVUE</td>
+<td style="text-align: left;">n/a</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">HygroVUE_1_1_1(1)</td>
+<td style="text-align: left;">TA_1_1_1</td>
+<td style="text-align: left;">Air Temperature #1</td>
+<td style="text-align: left;">degC</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">HygroVUE_1_1_1(2)</td>
+<td style="text-align: left;">RH_1_1_1</td>
+<td style="text-align: left;">Relative Humidity #1</td>
+<td style="text-align: left;">%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">HygroVUE_1_1_1(3)</td>
+<td style="text-align: left;">DP_1_1_1</td>
+<td style="text-align: left;">Dew Point Temperature #1</td>
+<td style="text-align: left;">degC</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">HygroVUE_1_1_1(4)</td>
+<td style="text-align: left;">VP_1_1_1</td>
+<td style="text-align: left;">Water Vapour Pressure #1</td>
+<td style="text-align: left;">hPa</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">HygroVUE_1_2_1(1)</td>
+<td style="text-align: left;">TA_1_2_1</td>
+<td style="text-align: left;">Air Temperature #2</td>
+<td style="text-align: left;">degC</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">HygroVUE_1_2_1(2)</td>
+<td style="text-align: left;">RH_1_2_1</td>
+<td style="text-align: left;">Relative Humidity #2</td>
+<td style="text-align: left;">%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">HygroVUE_1_2_1(3)</td>
+<td style="text-align: left;">DP_1_2_1</td>
+<td style="text-align: left;">Dew Point Temperature #2</td>
+<td style="text-align: left;">degC</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">HygroVUE_1_2_1(4)</td>
+<td style="text-align: left;">VP_1_2_1</td>
+<td style="text-align: left;">Water Vapour Pressure #2</td>
+<td style="text-align: left;">hPa</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">HygroVUE_1_3_1(1)</td>
+<td style="text-align: left;">TA_1_3_1</td>
+<td style="text-align: left;">Air Temperature #3</td>
+<td style="text-align: left;">degC</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">HygroVUE_1_3_1(2)</td>
+<td style="text-align: left;">RH_1_3_1</td>
+<td style="text-align: left;">Relative Humidity #3</td>
+<td style="text-align: left;">%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">HygroVUE_1_3_1(3)</td>
+<td style="text-align: left;">DP_1_3_1</td>
+<td style="text-align: left;">Dew Point Temperature #3</td>
+<td style="text-align: left;">degC</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">HygroVUE_1_3_1(4)</td>
+<td style="text-align: left;">VP_1_3_1</td>
+<td style="text-align: left;">Water Vapour Pressure #3</td>
+<td style="text-align: left;">hPa</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">HygroVUE_1_4_1(1)</td>
+<td style="text-align: left;">TA_1_4_1</td>
+<td style="text-align: left;">Air Temperature #4</td>
+<td style="text-align: left;">degC</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">HygroVUE_1_4_1(2)</td>
+<td style="text-align: left;">RH_1_4_1</td>
+<td style="text-align: left;">Relative Humidity #4</td>
+<td style="text-align: left;">%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">HygroVUE_1_4_1(3)</td>
+<td style="text-align: left;">DP_1_4_1</td>
+<td style="text-align: left;">Dew Point Temperature #4</td>
+<td style="text-align: left;">degC</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">HygroVUE_1_4_1(4)</td>
+<td style="text-align: left;">VP_1_4_1</td>
+<td style="text-align: left;">Water Vapour Pressure #4</td>
+<td style="text-align: left;">hPa</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">WS</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Wind Speed</td>
+<td style="text-align: left;">m/s</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">WD</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Wind Direction</td>
+<td style="text-align: left;">deg</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CNR4_IU(1)</td>
+<td style="text-align: left;">SW_IN_IU</td>
+<td style="text-align: left;">Short Wave Incoming Radiation, raw</td>
+<td style="text-align: left;">mV</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CNR4_IU(2)</td>
+<td style="text-align: left;">SW_OUT_IU</td>
+<td style="text-align: left;">Short Wave Outgoing Radiation, raw</td>
+<td style="text-align: left;">mV</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CNR4_IU(3)</td>
+<td style="text-align: left;">LW_IN_IU</td>
+<td style="text-align: left;">Long Wave Incoming Radiation, raw</td>
+<td style="text-align: left;">mV</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CNR4_IU(4)</td>
+<td style="text-align: left;">LW_OUT_IU</td>
+<td style="text-align: left;">Long Wave Outgoing Radiation, raw</td>
+<td style="text-align: left;">mV</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CNR4_Sens(1)</td>
+<td style="text-align: left;">SW_IN_Sens</td>
+<td style="text-align: left;">Short Wave upper Sensor Sensitivity</td>
+<td style="text-align: left;">uV/W/m^2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CNR4_Sens(2)</td>
+<td style="text-align: left;">SW_OUT_Sens</td>
+<td style="text-align: left;">Short Wave lower Sensor Sensitivity</td>
+<td style="text-align: left;">uV/W/m^2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CNR4_Sens(3)</td>
+<td style="text-align: left;">LW_IN_Sens</td>
+<td style="text-align: left;">Long Wave upper Sensor Sensitivity</td>
+<td style="text-align: left;">uV/W/m^2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CNR4_Sens(4)</td>
+<td style="text-align: left;">LW_OUT_Sens</td>
+<td style="text-align: left;">Long Wave lower Sensor Sensitivity</td>
+<td style="text-align: left;">uV/W/m^2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CNR4(1)</td>
+<td style="text-align: left;">SW_IN</td>
+<td style="text-align: left;">Short Wave Incoming Radiation</td>
+<td style="text-align: left;">W/m^2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CNR4(2)</td>
+<td style="text-align: left;">SW_OUT</td>
+<td style="text-align: left;">Short Wave Outgoing Radiation</td>
+<td style="text-align: left;">W/m^2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CNR4(3)</td>
+<td style="text-align: left;">LW_IN</td>
+<td style="text-align: left;">Long Wave Incoming Radiation incl.&nbsp;σT^4</td>
+<td style="text-align: left;">W/m^2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CNR4(4)</td>
+<td style="text-align: left;">LW_OUT</td>
+<td style="text-align: left;">Long Wave Outgoing Radiation incl.&nbsp;σT^4</td>
+<td style="text-align: left;">W/m^2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">T_CNR4_C</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Body Temperature of CNR4</td>
+<td style="text-align: left;">degC</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">T_CNR4_K</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Body Temperature of CNR4</td>
+<td style="text-align: left;">K</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ALB</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Albedo</td>
+<td style="text-align: left;">%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NETRAD</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Net Radiation</td>
+<td style="text-align: left;">W/m^2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F_CNF4</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Frequency of Fan of Ventilation Unit</td>
+<td style="text-align: left;">Hz</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">PPFD_IN</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Incoming Photosynthetic Photon Flux Density</td>
+<td style="text-align: left;">umol/m^2/s</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">PPFD_OUT</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Outgoing Photosynthetic Photon Flux Density</td>
+<td style="text-align: left;">umol/m^2/s</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">P_1_1_1</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Precipitation from Tipping Bucket Rain Gauge</td>
 <td style="text-align: left;">mm</td>
-<td style="text-align: left;">Precipitation</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">P_2_1_1</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Precipitation from Weighing Rain Sensor</td>
+<td style="text-align: left;">mm</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SnowVUE(1)</td>
+<td style="text-align: left;">DI_SnowVUE</td>
+<td style="text-align: left;">Distance to Surface</td>
+<td style="text-align: left;">cm</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SnowVUE(2)</td>
+<td style="text-align: left;">QN_SnowVUE</td>
+<td style="text-align: left;">Quality Number of SnowVUE</td>
+<td style="text-align: left;">n/a</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">HT_SnowVUE</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Distance measured by SnowVUE without snow</td>
+<td style="text-align: left;">cm</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">D_SNOW</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Snow Depth</td>
+<td style="text-align: left;">cm</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CS650_1_1_1(1)</td>
+<td style="text-align: left;">E_CS650_1_1_1</td>
+<td style="text-align: left;">Soil Permittivity #1</td>
+<td style="text-align: left;">n/a</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CS650_1_1_1(2)</td>
+<td style="text-align: left;">S_CS650_1_1_1</td>
+<td style="text-align: left;">Soil Electrical Conductivity #1</td>
+<td style="text-align: left;">dS/m</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CS650_1_1_1(3)</td>
+<td style="text-align: left;">TS_1_1_1</td>
+<td style="text-align: left;">Soil Temperature #1</td>
+<td style="text-align: left;">degC</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CS650_1_2_1(1)</td>
+<td style="text-align: left;">E_CS650_1_2_1</td>
+<td style="text-align: left;">Soil Permittivity #2</td>
+<td style="text-align: left;">n/a</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CS650_1_2_1(2)</td>
+<td style="text-align: left;">S_CS650_1_2_1</td>
+<td style="text-align: left;">Soil Electrical Conductivity #2</td>
+<td style="text-align: left;">dS/m</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CS650_1_2_1(3)</td>
+<td style="text-align: left;">TS_1_2_1</td>
+<td style="text-align: left;">Soil Temperature #2</td>
+<td style="text-align: left;">degC</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CS650_1_3_1(1)</td>
+<td style="text-align: left;">E_CS650_1_3_1</td>
+<td style="text-align: left;">Soil Permittivity #3</td>
+<td style="text-align: left;">n/a</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CS650_1_3_1(2)</td>
+<td style="text-align: left;">S_CS650_1_3_1</td>
+<td style="text-align: left;">Soil Electrical Conductivity #3</td>
+<td style="text-align: left;">dS/m</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CS650_1_3_1(3)</td>
+<td style="text-align: left;">TS_1_3_1</td>
+<td style="text-align: left;">Soil Temperature #3</td>
+<td style="text-align: left;">degC</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CS650_1_4_1(1)</td>
+<td style="text-align: left;">E_CS650_1_4_1</td>
+<td style="text-align: left;">Soil Permittivity #4</td>
+<td style="text-align: left;">n/a</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CS650_1_4_1(2)</td>
+<td style="text-align: left;">S_CS650_1_4_1</td>
+<td style="text-align: left;">Soil Electrical Conductivity #4</td>
+<td style="text-align: left;">dS/m</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CS650_1_4_1(3)</td>
+<td style="text-align: left;">TS_1_4_1</td>
+<td style="text-align: left;">Soil Temperature #4</td>
+<td style="text-align: left;">degC</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">HFP_IU(1)</td>
+<td style="text-align: left;">G_IU_1_1_1</td>
+<td style="text-align: left;">Soil Heat Flux, raw #1</td>
+<td style="text-align: left;">mV</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">HFP_IU(2)</td>
+<td style="text-align: left;">G_IU_2_1_1</td>
+<td style="text-align: left;">Soil Heat Flux, raw #2</td>
+<td style="text-align: left;">mV</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">HFP_IU(3)</td>
+<td style="text-align: left;">G_IU_3_1_1</td>
+<td style="text-align: left;">Soil Heat Flux, raw #3</td>
+<td style="text-align: left;">mV</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">HFP_IU(4)</td>
+<td style="text-align: left;">G_IU_4_1_1</td>
+<td style="text-align: left;">Soil Heat Flux, raw #4</td>
+<td style="text-align: left;">mV</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">HFP_Sens(1)</td>
+<td style="text-align: left;">G_Sens_1_1_1</td>
+<td style="text-align: left;">Soil Heat Flux Sensitivity #1</td>
+<td style="text-align: left;">uV/W/m^2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">HFP_Sens(2)</td>
+<td style="text-align: left;">G_Sens_2_1_1</td>
+<td style="text-align: left;">Soil Heat Flux Sensitivity #2</td>
+<td style="text-align: left;">uV/W/m^2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">HFP_Sens(3)</td>
+<td style="text-align: left;">G_Sens_3_1_1</td>
+<td style="text-align: left;">Soil Heat Flux Sensitivity #3</td>
+<td style="text-align: left;">uV/W/m^2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">HFP_Sens(4)</td>
+<td style="text-align: left;">G_Sens_4_1_1</td>
+<td style="text-align: left;">Soil Heat Flux Sensitivity #4</td>
+<td style="text-align: left;">uV/W/m^2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">HFP(1)</td>
+<td style="text-align: left;">G_1_1_1</td>
+<td style="text-align: left;">Soil Heat Flux #1</td>
+<td style="text-align: left;">W/m^2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">HFP(2)</td>
+<td style="text-align: left;">G_2_1_1</td>
+<td style="text-align: left;">Soil Heat Flux #2</td>
+<td style="text-align: left;">W/m^2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">HFP(3)</td>
+<td style="text-align: left;">G_3_1_1</td>
+<td style="text-align: left;">Soil Heat Flux #3</td>
+<td style="text-align: left;">W/m^2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">HFP(4)</td>
+<td style="text-align: left;">G_4_1_1</td>
+<td style="text-align: left;">Soil Heat Flux #4</td>
+<td style="text-align: left;">W/m^2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Solar(1)</td>
+<td style="text-align: left;">SolarVoltage</td>
+<td style="text-align: left;">Voltage from Solar System</td>
+<td style="text-align: left;">V</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Solar(2)</td>
+<td style="text-align: left;">SolarCurrent</td>
+<td style="text-align: left;">Current from Solar System</td>
+<td style="text-align: left;">A</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">PTemp</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Panel Temperature</td>
+<td style="text-align: left;">degC</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Batt</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Battery Voltage</td>
+<td style="text-align: left;">V</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">VOLT116mux(16)</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SDM_CD16ACA(16)</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
 </tr>
 </tbody>
 </table>

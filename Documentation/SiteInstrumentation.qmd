@@ -1,5 +1,5 @@
 ---
-title: "Variable Names"
+title: "Site Instrumentation"
 order: 4
 ---
 
@@ -16,6 +16,6 @@ library(purrr)
 ```{R}
 #| label: tbl-times
 #| tbl-cap: "Variable names & descriptions."
-Sheet <- read_excel('/Users/saraknox/Library/CloudStorage/GoogleDrive-saraknox.knox@gmail.com/My Drive/Work/Knox/Projects/2023-QC flux network/Logger programs/Instrumentation.xlsx', sheet = "Variable Names")
+Sheet <- read_excel('/Users/saraknox/Library/CloudStorage/GoogleDrive-saraknox.knox@gmail.com/My Drive/Work/Knox/Projects/2023-QC flux network/Logger programs/Instrumentation.xlsx', sheet = "Site Instrumentation")
 kable(Sheet, col.names = gsub("[.]", " ", names(Sheet)))
 ```
